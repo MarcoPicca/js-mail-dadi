@@ -7,7 +7,7 @@ button.addEventListener('click', function () {
     
     
     
-    let emailList = [
+    const emailList = [
         'pazzaemail@gmail.com',
         'pozzaemail@gmail.com',
         'pazzoemail@gmail.com',
@@ -26,10 +26,12 @@ button.addEventListener('click', function () {
     ];
 
 
-if (!emailList.includes(userEmail)){
-    alert('Accesso Negato');
-} else if (emailList.includes(userEmail)) {
-    alert('Benvenutissimo');
+for (let i = 0; i < emailList.length; i++){
+    if (!userEmail != emailList[i]){
+        alert('yes');
+    } else {
+        alert('no');
+    }
 }
 
 });
